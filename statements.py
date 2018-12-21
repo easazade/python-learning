@@ -34,3 +34,13 @@ for num in numbers:
         break
 else:  # this else clause is executed against our for clause and runs if for break is not called
     print("there is no num 7 in list")
+
+# there is only another type of loops in python which are while loops
+answer = 75
+guess = 0
+while guess != answer:
+    entry = input("guess the number : ")
+    if not type("").isnumeric(entry):
+        entry = input("please right a number")
+    else:
+        guess = int(entry)
