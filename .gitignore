@@ -18,7 +18,7 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 .idea/
-
+venv/
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
