@@ -54,3 +54,5 @@ string1 = "this is a good day for all of us"
 param = "good"
 if param in string1:
     print(f"word ({param}) exists in the sentence")
+
+print(r" when put r before ' all the characters like \n \r \t will be treated like simple characters")
