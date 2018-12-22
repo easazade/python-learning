@@ -29,3 +29,6 @@ cant_change_global()
 read_global()
 write_global()
 read_global()
+
+# dir() lists all the functions of the given object
+print(dir(value))
