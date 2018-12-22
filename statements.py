@@ -35,6 +35,12 @@ for num in numbers:
 else:  # this else clause is executed against our for clause and runs if for break is not called
     print("there is no num 7 in list")
 
+# for loop with multiple lists
+list1 = [1, 2, 3, 4]  # the number of iteration will be the size of smaller list
+list2 = [1, 2, 3, 4, 5, 6]
+for i, j in zip(list1, list2):
+    print(f"i is {i} and j is {j}")
+
 # there is only another type of loops in python which are while loops
 answer = 75
 guess = 0

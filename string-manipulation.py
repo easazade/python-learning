@@ -48,3 +48,9 @@ print(name.replace("sh", "fa"))
 name = "alireza easazade"
 print("ali" in name)
 print("ali" not in name)
+
+# check if string contains another string in it
+string1 = "this is a good day for all of us"
+param = "good"
+if param in string1:
+    print(f"word ({param}) exists in the sentence")
