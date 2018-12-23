@@ -13,9 +13,9 @@ print(function_with_multiple_return_values())
 increment(7, by=2)
 
 
-def multiply(*list):
+def multiply(*numbers):
     total = 1
-    for num in list:
+    for num in numbers:
         total *= num
     return total
 
