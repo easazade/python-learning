@@ -1,6 +1,6 @@
 import datetime
 import os
-from application import doc_scripts
+from topics import doc_scripts
 
 
 def create_folder_with_name(name: str):
