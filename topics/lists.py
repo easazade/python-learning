@@ -20,3 +20,7 @@ print(list1)
 list2 = list1.copy()
 print(id(list1))
 print(id(list2))
+# adding values to lists at specific index
+list3 = ["ali", "parsa", "mostafa", "milad"]
+list3.insert(1, "saeed")
+print(list3)
