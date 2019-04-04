@@ -17,5 +17,3 @@ ali.car = "pride"
 
 # build-in __str__ methods
 print(ali.__str__())
-
-l = object

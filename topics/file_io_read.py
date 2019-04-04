@@ -1,4 +1,5 @@
-file = open("files//info.txt", 'r')  # 'r' mode is the default mode so we can just not use it
+# 'r' mode is the default mode so we can just not use it
+file = open("files//info.txt", 'r')
 print(type(file))
 content = file.read()
 print(content)
