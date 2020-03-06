@@ -6,7 +6,10 @@ def generate_random_letter(): return random.choice(string.ascii_lowercase)
 
 
 def generate_three_letters():
-    return generate_random_letter() + generate_random_letter() + generate_random_letter()
+    value = ""
+    for letter in range(3):
+        value += generate_random_letter()
+    return value
 
 
 print(generate_three_letters())

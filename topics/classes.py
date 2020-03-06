@@ -17,5 +17,11 @@ print(ali.get_name())
 ali.age = 25
 ali.car = "pride"
 
-# build-in __str__ methods
-print(ali.__str__())
+
+def dump(obj):
+    for attr in dir(obj):
+        if hasattr(obj, attr):
+            print("obj.%s = %s" % (attr, getattr(obj, attr)))
+
+
+dump(ali)
