@@ -31,4 +31,4 @@ write_global()
 read_global()
 
 # dir() lists all the functions of the given object
-print(dir(value))
+print(value.__dir__())

@@ -3,7 +3,8 @@ def increment(number: int, by) -> int:
 
 
 def function_with_multiple_return_values(arg1=5):
-    return "alireza", 20 + arg1  # the return type is a Tuple which is an unmodifiable list
+    # the return type is a Tuple which is an unmodifiable list
+    return "alireza", 20 + arg1
 
 
 print(increment(5, 2))

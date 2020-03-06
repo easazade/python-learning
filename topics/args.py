@@ -8,3 +8,4 @@ def save_user(**user):
 
 
 save_user(id=54, name="alireza", phone="09117158746")
+save_user(id=16, name="saman", phone="09116598777")

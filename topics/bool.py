@@ -3,7 +3,7 @@
 # ""
 # []
 # None (null)
-# every thins else is true including "False"
+# everything else is true including "False"
 
 print(bool(0))
 print(bool([]))

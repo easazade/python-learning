@@ -1,7 +1,7 @@
 tuple1 = ("name", 65, True)
 list1 = [1, 3, 6, 5, 8, 9]
 # in dictionaries you can use key/value pairs. they are unordered collections like maps
-# dictionaries are maps but the difference is that not all keys (and values) must be of single type
+# dictionaries are maps but the difference is that not all keys (and values) must be of same specific type
 dictionary = {
     "id": "0920e2jk",
     "name": "alirezza",

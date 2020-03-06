@@ -1,11 +1,13 @@
 class Person:
     name: str
 
-    def __init__(self, name): self.name = name  # overriding __init__ methods constructor
+    # overriding __init__ method constructor
+    def __init__(self, name): self.name = name
 
     def get_name(self) -> str: return self.name
 
-    def __str__(self): return f"name:{self.name}"  # overriding __str__ methods
+    # overriding __str__ method
+    def __str__(self): return f"name:{self.name}"
 
 
 ali = Person("alireza")
