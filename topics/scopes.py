@@ -21,7 +21,7 @@ def write_global():
 
 
 def cant_change_global():
-    value = "farshad"
+    value = "farshad"  # just defies nwe variable
 
 
 read_global()
