@@ -2,23 +2,28 @@ class Person:
     name: str
 
     # overriding __init__ method constructor
-    def __init__(self, name): self.name = name
+    def __init__(self, name: str):
+        self.name = name
 
-    def get_name(self) -> str: return self.name
+    def get_name(self) -> str:
+        return self.name
 
     # overriding __str__ method
-    def __str__(self): return f"name:{self.name}"
+    def __str__(self):
+        return f"name:{self.name}"
 
 
 ali = Person("alireza")
 print(ali.get_name())
 
-# adding properties to objects at runtime dynamically
-ali.age = 25
-ali.car = "pride"
+# adding properties to objects at runtime dynamically.
+# It can be done but i guess no in their right mind would do it unless they are Javascript developers.
+# just ignoring hints for educational purposes
+ali.age = 25  # type: ignore
+ali.car = "pride"  # type: ignore
 
 
-def dump(obj):
+def dump(obj: object):
     for attr in dir(obj):
         if hasattr(obj, attr):
             print("obj.%s = %s" % (attr, getattr(obj, attr)))
