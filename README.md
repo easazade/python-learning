@@ -1,6 +1,12 @@
 # Python Notes
 
 This repo is about learning python
+Install python using brew:
+`brew install python`
+export it in path in `.zshrc`:
+`export PATH="/opt/homebrew/bin:$PATH"`
+
+`which python` should show the homebrew installation not the one from `/usr/bin/python3`. that is system's installation of python.
 
 ## Commands
 
