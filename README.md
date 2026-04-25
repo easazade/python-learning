@@ -36,7 +36,6 @@ Update vscode settings:
 
 ```json
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "strict",
   "editor.formatOnSave": true,
@@ -53,6 +52,9 @@ Update vscode settings:
 `defaultInterpreterPath` points VS Code at your project venv.
 `autoImportCompletions` enables auto-import suggestions.
 `typeCheckingMode` can be `off`, `basic`, or `strict`.
+
+If you're not using `uv` to manage project put this in the `.vscode/settings.json`
+`"python.defaultInterpreterPath": "${workspaceFolder}/.venv",`
 
 ## Notes:
 
@@ -135,7 +137,7 @@ source = ["fastapi_utils_pro"]
 show_missing = true
 ```
 
-# Project management
+# project management
 
 **uv** is the tool for project management. It's similar to `npm`
 
@@ -150,7 +152,7 @@ Here are some of its most used commands:
 - Create a lock file for the project's dependencies: `uv lock`
 - Build the project into source and binary distributions: `uv build`
 
-#### How to install uv and init a project:
+## How to install uv and init a project:
 
 - Install uv using curl `curl -LsSf https://astral.sh/uv/install.sh | sh`
 - Create a new project `uv init my_project && cd my_project`
@@ -165,7 +167,16 @@ Now you'll have a project with a pyproject.toml ready to manage
 Now you can run a python script using `uv`
 `uv run python --version`
 
-# Lint & Format
+If you're using vscode. First make sure `.venv` file is created by `uv` then hit `Cmd+Shift+P` to open command prompt and search for `Python:Select Interpreter` make sure the python path that is selected is from workspace `.venv/bin/python`. This will make vscode to use the python from `.venv` or virtual environment managed by **uv** which should be automatically recognized and chosen by vscode itself.
+
+**NOTE:** If for any reason you need to force the python version on vscode you can do so by
+putting this in the `.vscode/settings.json`
+
+```json
+"python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+```
+
+## Lint & Format
 
 This is done by **Ruff**
 
