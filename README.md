@@ -212,3 +212,27 @@ Now you can run ruff:
 - `uv run ruff check .`
 - `uv run ruff check . --fix`
 - `uv run ruff format .`
+
+
+## Type lints (pyright)
+Ruff has a few rules (like flagging missing annotations with ANN rules), but it does not do actual type inference or type checking at compile time.
+For that we need to use pylance.
+
+> **NOTE:** First make sure you have pylance plugin installed on vscode
+
+- Install pyright
+`uv add --dev pyright`
+- Add its configuration to pyproject.toml
+```toml
+# pyproject.toml
+[tool.pyright]
+include        = ["src"]
+exclude        = [".venv", "**/__pycache__"]
+venvPath       = "."
+venv           = ".venv"
+typeCheckingMode = "standard"
+```
+
+Now you can run pyright:
+`uv run pyright`
+

@@ -22,3 +22,8 @@ fixable = ["ALL"]
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[tool.pyright]
+include = ["main.py", "string_generator", "topics"]
+exclude = [".venv", "**/__pycache__"]
+typeCheckingMode = "strict"
