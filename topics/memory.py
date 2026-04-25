@@ -8,6 +8,10 @@ print("memory location -> " + id(x).__str__())
 
 # mutable types
 list_of_names = ["ali", "hasan", "yashar"]
-print("memory location of list -> " + id(list_of_names).__str__() + "  list size = " + list_of_names.__len__().__str__())
+print(
+    "memory location of list -> " + id(list_of_names).__str__() + "  list size = " + list_of_names.__len__().__str__()
+)
 list_of_names.append("sasan")
-print("memory location of list -> " + id(list_of_names).__str__() + "  list size = " + list_of_names.__len__().__str__())
+print(
+    "memory location of list -> " + id(list_of_names).__str__() + "  list size = " + list_of_names.__len__().__str__()
+)
