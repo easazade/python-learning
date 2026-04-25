@@ -1,0 +1,5 @@
+{
+  "include": ["main.py", "string_generator", "topics"],
+  "exclude": [".venv", "**/__pycache__"],
+  "typeCheckingMode": "strict"
+}

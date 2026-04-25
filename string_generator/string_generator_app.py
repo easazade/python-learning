@@ -2,7 +2,7 @@ import random
 import string
 
 
-def generate_random_letter():
+def generate_random_letter() -> str:
     return random.choice(string.ascii_lowercase)
 
 

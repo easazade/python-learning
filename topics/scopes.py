@@ -11,17 +11,18 @@ print()
 
 # if we want to change global variables from within functions we must call global on them
 # if we want to read them however it will be fine
-def read_global():
+def read_global() -> None:
     print(value)
 
 
-def write_global():
+def write_global() -> None:
     global value
     value = "hessan"
 
 
-def cant_change_global():
-    value = "farshad"  # just defies nwe variable
+def cant_change_global() -> None:
+    value = "farshad"  # just defines a new local variable
+    print(value)
 
 
 read_global()

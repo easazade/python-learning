@@ -1,7 +1,7 @@
 # python is dynamic types
 from datetime import time
 
-obj = 95
+obj: object = 95
 print(type(obj))
 obj = "alireza"
 print(type(obj))
@@ -16,5 +16,5 @@ print(type(obj))
 
 # type annotations which will be noticed by mypy linter note that python has different linters
 # mypy is not installed right now
-age: int = 19
+age: int | str = 19
 age = "dpawmdp"

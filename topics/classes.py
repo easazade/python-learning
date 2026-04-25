@@ -2,14 +2,14 @@ class Person:
     name: str
 
     # overriding __init__ method constructor
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> None:
         self.name = name
 
     def get_name(self) -> str:
         return self.name
 
     # overriding __str__ method
-    def __str__(self):
+    def __str__(self) -> str:
         return f"name:{self.name}"
 
 
@@ -23,7 +23,7 @@ ali.age = 25  # type: ignore
 ali.car = "pride"  # type: ignore
 
 
-def dump(obj: object):
+def dump(obj: object) -> None:
     for attr in dir(obj):
         if hasattr(obj, attr):
             print("obj.%s = %s" % (attr, getattr(obj, attr)))

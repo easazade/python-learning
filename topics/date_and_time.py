@@ -15,7 +15,7 @@ print(after)
 
 # time
 
-lst = []
+lst: list[datetime.datetime] = []
 for i in range(5):
     lst.append(datetime.datetime.now())
     print(lst)

@@ -1,8 +1,8 @@
-def increment(number: int, by) -> int:
+def increment(number: int, by: int) -> int:
     return number + by
 
 
-def function_with_multiple_return_values(arg1=5):
+def function_with_multiple_return_values(arg1: int = 5) -> tuple[str, int]:
     # the return type is a Tuple which is an unmodifiable list
     return "alireza", 20 + arg1
 
@@ -16,7 +16,7 @@ print(age)
 increment(7, by=2)
 
 
-def multiply(*numbers):
+def multiply(*numbers: int) -> int:
     total = 1
     for num in numbers:
         total *= num
@@ -27,8 +27,7 @@ print(multiply(5, 9, 8, 7, 4, 6))
 
 
 # this is how we create an object in python
-def save_user(**user):
-    ali = ""
+def save_user(**user: object) -> None:
     print(f"user -> {user['id']} - {user['name']} - {user['phone']}")
 
 

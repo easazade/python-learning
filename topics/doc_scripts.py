@@ -4,7 +4,7 @@ it will be shown when doc_scripts.__doc__ is called
 """
 
 
-def create_file():
+def create_file() -> None:
     """this is the documentation for this method and is accessed by
     doc_scripts.create_file.__doc__"""
     print("creating file")

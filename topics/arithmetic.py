@@ -10,7 +10,7 @@ a = 10 // 3  # 3
 print(a)
 a = 10 % 3  # 1
 print(a)
-a = 10 ** 3  # 1000
+a = 10**3  # 1000
 print(a)
 
 # augmented assignment operator exists for each of the arithmetic operators like +=

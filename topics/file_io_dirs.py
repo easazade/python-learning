@@ -3,13 +3,13 @@ import os
 from topics import doc_scripts
 
 
-def create_folder_with_name(name: str):
+def create_folder_with_name(name: str) -> None:
     items = os.listdir("c:/")
     if name not in items:
         os.mkdir(f"c:/{name}")
 
 
-def create_random_file_in_my_random_files():
+def create_random_file_in_my_random_files() -> None:
     create_folder_with_name("random files")
     date = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S-%f")
     file_name = f"c:/random files/{date}.txt"

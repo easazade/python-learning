@@ -1,4 +1,4 @@
-list1 = ["name", 5, True]
+list1: list[str | int | bool | float] = ["name", 5, True]
 print(list1[1])
 # we can split lists just like we do it with string
 # in python actually a string is like a list of characters. list and string have similar behaviors in python
